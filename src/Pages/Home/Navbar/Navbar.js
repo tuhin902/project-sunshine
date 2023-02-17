@@ -30,9 +30,14 @@ const Navbar = () => {
                     {MenuBar}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <Link className="btn btn-primary">Get started</Link>
+            <div className="form-control">
+                <label className="label cursor-pointer">
+                    <span className="label-text text-base font-semibold ">Post a job</span>
+                    <input type="checkbox" className="toggle mx-2" />
+                    <span className="label-text text-base font-semibold">Want a job</span>
+                </label>
             </div>
+
         </div>
     );
 };
