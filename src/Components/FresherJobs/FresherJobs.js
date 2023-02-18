@@ -6,7 +6,7 @@ const FresherJobs = () => {
     // console.log(fresherJobs);
 
     useEffect(() => {
-        fetch('http://localhost:4000/fresherjobs')
+        fetch('https://sunshine-server-tuhin902.vercel.app/fresherjobs')
             .then(res => res.json())
             .then(data => setFresherJobs(data));
     }, []);

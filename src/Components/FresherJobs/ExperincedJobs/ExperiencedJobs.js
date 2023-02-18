@@ -6,14 +6,14 @@ const ExperiencedJobs = () => {
     console.log(experiencedJobs);
 
     useEffect(() => {
-        fetch('http://localhost:4000/fresherjobs')
+        fetch('https://sunshine-server-tuhin902.vercel.app/experiencedjobs')
             .then(res => res.json())
             .then(data => setExperiencedJobs(data));
     }, []);
     return (
         <div>
             <h2 className='text-3xl font-semibold text-center my-5
-            '>Fresher Jobs</h2>
+            '>Experienced Jobs</h2>
             {
                 experiencedJobs.map(job => <ExperiencedJobsCard key={job._id} job={job}></ExperiencedJobsCard>)
             }
